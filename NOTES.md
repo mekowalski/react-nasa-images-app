@@ -10,6 +10,7 @@
 - [] Create SearchBar component
   - responsible of showing only text input at top of screen
   - handle typing event
+  - need a text input for now
 
 - [] ImageList Component
   - take list of images and render it on the screen

@@ -1,9 +1,10 @@
 import React from 'react';
+import SearchBar from './SearchBar'
 
 const App = () => {
   return (
     <div>
-      Hello and welcome to NASA Images App!
+      <SearchBar />
     </div>
   )
 }
