@@ -5,7 +5,9 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        Search Bar Here
+        <form>
+          <input type='text' />
+        </form>
       </div>
     )
   }
