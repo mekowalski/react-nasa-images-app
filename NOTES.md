@@ -4,7 +4,7 @@
 3. Taking list of images and rendering list on screen
 
 ## What Components To Create
-- [] App Component, as always
+- [x] App Component, as always
   - Parent for and renders SearchBar and ImageList
 
 - [] Create SearchBar component
