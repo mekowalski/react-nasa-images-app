@@ -18,3 +18,9 @@ Kowalski, are you there?
   - Refactoring a few components from uncontrolled to controlled
   - Communcating from Child to Parent and incoking callbacks in Children
   - Using Grid CSS to workout the wonky image displays and gaps
+
+- A few things that do not work in the App:
+  - Currently the application returns 100 images
+  - Currently the images returned still have minor spacing issues(some images are right on top of another)
+  - There isn't much of a functioning app, the interaction is solely searching for images within NASA
+  - A user will only be able to search for images and get a basic display(no comments, titles, etc)
