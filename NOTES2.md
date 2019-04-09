@@ -17,6 +17,10 @@
   - Use React Ref system: gives access to single DOM element
   - [x] Create refs in constructor(), assign to instance variable then pass to particular JSX as props
   - [x] Also need to define `componentDidMount` life cycle
+    - returns 0 for clientHeight: browser console doesn't know the data inside the DOM node of img, only until the object is expanded, then expand current: img
+    - console.log-ging the values before the image has had a chance to load up
+    - tiny refactor `componentDidMount` to access image height only after it has become available
+
   - [] figure out the image height
   - [] take height and set it on State on each re-rendered component
   - [] when re-rendering, use image height to generate appropriate `grid-row` property
