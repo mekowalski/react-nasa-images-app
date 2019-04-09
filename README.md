@@ -24,3 +24,16 @@ Kowalski, are you there?
   - Currently the images returned still have minor spacing issues(some images are right on top of another)
   - There isn't much of a functioning app, the interaction is solely searching for images within NASA
   - A user will only be able to search for images and get a basic display(no comments, titles, etc)
+
+### App Review
+- SearchBar: Event Handlers
+  1. With an event handler, take an input/form tag
+  2. Pass a callback() to a specifically named props(<form onSubmit={this.onFormSubmit}, etc)
+  3. When that tag/element emits event, that callback() will be called
+  - Rule to keep in mind: anytime there is a cb(), be safe to use ES6 =>() syntax, which will bind the function and have the appropriate value of `this`
+  - With Props system, only communicate from Parent down to Child(later an issue)
+  - To communicate from Child to Parent, pass a cb() from Parent to Child, then Child will call the cb()
+
+- PhotoList: Render photos, a list of photos
+  1. Map function, whenever rendering a list, probably will reach for Map function
+  2. Any time a list is made, define a `key` on the root element of that list that is consistent and unchanging
