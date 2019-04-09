@@ -7,6 +7,9 @@ class SearchBar extends React.Component {
       <div>
         <form>
           <input type='text' />
+          {
+            //input works in browser
+          }
         </form>
       </div>
     )

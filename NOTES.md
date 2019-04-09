@@ -11,6 +11,7 @@
   - responsible of showing only text input at top of screen
   - handle typing event
   - need a text input for now
+  - [] Add styling from Semantic UI(maybe later include a NASA logo)
 
 - [] ImageList Component
   - take list of images and render it on the screen
