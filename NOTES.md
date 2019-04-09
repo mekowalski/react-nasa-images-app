@@ -6,6 +6,7 @@
 ## What Components To Create
 - [x] App Component, as always
   - Parent for and renders SearchBar and ImageList
+  - App responsible for showing HTML/Content to users and interacting/handling user interactions
 
 - [x] Create SearchBar component
   - responsible of showing only text input at top of screen
@@ -52,5 +53,9 @@
 - SearchBar purpose is to allow user to type input & submit it, not responsible to make request for images
 - App should be responsible for fetching images from external API request
   - (Communicate from Child to Parent, from SearchBar to App)
-  - [] Refactor App to class-based component
-  - [] Define callback function on App (onSearchSubmit)
+  - [x] Refactor App to class-based component
+  - [x] Define callback function on App (onSearchSubmit)
+
+- Fetching Data!!!
+  - Load data to Application, make network request to NASA images/videos API
+  - [] Build request with Axios (axios is responsible for making requests and fetching data from network)
