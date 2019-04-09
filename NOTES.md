@@ -46,3 +46,10 @@
 - Root URL: `https://images-api.nasa.gov`
 - Endpoint I will use: `GET /search?q={q}` to perform a search
 - eg: `https://images-api.nasa.gov/search?q=saturn&media_type=image` will display images related to saturn
+
+
+## Where To Initiate Fetching Images
+- SearchBar purpose is to allow user to type input & submit it, not responsible to make request for images
+- App should be responsible for fetching images from external API request
+  - (Communicate from Child to Parent, from SearchBar to App)
+  - [] Refactor App to class-based component
