@@ -11,7 +11,10 @@ class SearchBar extends React.Component {
         <form className='ui form'>
           <div className='field'>
             <label>Search NASA Images </label>
-            <input type='text' onChange={this.onInputChange} />
+            <input
+              type='text'
+              onChange={this.onInputChange}
+            />
           </div>
         </form>
       </div>

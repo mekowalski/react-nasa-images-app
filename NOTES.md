@@ -22,5 +22,5 @@
 
 ## Functionality: Creating Event Handlers
 - Code to detect anytime a user enters text in searchbar
-- [] Define event handler for input
+- [x] Define event handler for input
   - called anytime the text is changed in the input
