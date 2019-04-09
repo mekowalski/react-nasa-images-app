@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 //customize making requests to a specific URL with headers
-axios.create({
+export default axios.create({
+  baseURL: 'https://images-api.nasa.gov',
   headers: {
     Authorization: 'API-key fLIfZZeWjAhPawnoL8lIyubp9JeOYPSdvJUU4jYk'
   }

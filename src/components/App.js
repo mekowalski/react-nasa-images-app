@@ -1,17 +1,16 @@
 import React from 'react';
-import axios from 'axios';
+import nasaImagesApi  from '../api/nasaImagesApi';
 import SearchBar from './SearchBar'
 
 class App extends React.Component{
   state = { images: [] }
 
   onSearchSubmit = async term => {
-    const response = await axios.get('https://images-api.nasa.gov/search', {
+    const response = await nasaImagesApi.get('/search', {
       params: {
         q: term,
         media_type: 'image'
-      },
-
+      }
     })
     this.setState({ images: response.data.collection.items })
   }
