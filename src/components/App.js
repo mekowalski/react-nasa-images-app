@@ -1,6 +1,7 @@
 import React from 'react';
 import nasaImagesApi  from '../api/nasaImagesApi';
-import SearchBar from './SearchBar'
+import SearchBar from './SearchBar';
+import ImageList from './ImageList';
 
 class App extends React.Component{
   state = { images: [] }
@@ -19,6 +20,7 @@ class App extends React.Component{
     return (
       <div className='ui container' style={{ marginTop: '15px' }}>
         <SearchBar onSubmit={this.onSearchSubmit} />
+        <ImageList />
         Found: {this.state.images.length} images
       </div>
     )
