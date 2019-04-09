@@ -11,3 +11,8 @@
     - component will figure out how large image is then adjust the grid size
 
   - [x] use ImageCard inside ImageList instead of img tag
+
+- Access DOM with refs
+  - [] figure out the image height
+  - [] take height and set it on State on each re-rendered component
+  - [] when re-rendering, use image height to generate appropriate `grid-row` property 
