@@ -2,10 +2,10 @@ import React from 'react';
 
 const ImageList = props => {
   const images = props.images.map((image) => {
-    return <img src={image.links[0].href} />
+    return <img alt={image.title} key={image.href} src={image.links[0].href} />
   })
-  //warning: ./src/components/ImageList.js
-  //Line 5:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  //technically, i can't use an `id` because that isn't a given property
+  //each image does have a unique href though therefor i used that as the value assigned to key prop
 
   return (
     <div>

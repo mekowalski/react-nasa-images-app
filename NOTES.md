@@ -94,4 +94,5 @@
   - communicate list of images, just fetched, down to ImageList (Parent to Child)
     - [x] define and pass prop
 
-  - [] Figure out Key purpose in Lists(from warning)
+  - [x] Figure out Key purpose in Lists(from warning)
+    - add key prop to each element in list of items rendered
