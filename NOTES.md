@@ -25,6 +25,9 @@
 - [x] Define event handler for input
   - called anytime the text is changed in the input
 
+- [] Refactor SearchBar from uncontrolled to controlled element
+  - initialize with state object
+
 ## NASA Image and Video Library
 - Root URL: `https://images-api.nasa.gov`
 - Endpoint I will use: `GET /search?q={q}` to perform a search
