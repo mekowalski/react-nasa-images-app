@@ -4,11 +4,13 @@
 
  class ImageCard extends React.Component {
    render() {
+     const { title, links } = this.props.image
+
      return (
        <div>
         <img
-          alt={this.props.image.title}
-          src={this.props.image.links[0].href}
+          alt={title}
+          src={links[0].href}
         />
        </div>
      )
