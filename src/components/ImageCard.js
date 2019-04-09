@@ -3,19 +3,21 @@
  class ImageCard extends React.Component {
    constructor(props) {
      super(props)
+     this.state = { spans: 0 }
 
      this.imageRef = React.createRef()
    }
 
-   //add basic, vanilla js html event listener
-   //once load event is emitted, then have successfully loaded the image, now can get height
    componentDidMount() {
      this.imageRef.current.addEventListener('load', this.setSpans)
    }
 
-   //grid-row property takes units of spans
    setSpans = () => {
-     console.log(this.imageRef.current.clientHeight)
+     const height = this.imageRef.current.clientHeight
+
+     const spans = Math.ceil(height / 150)
+
+     this.setState ({ spans })
    }
 
    render() {
