@@ -59,3 +59,5 @@
 - Fetching Data!!!
   - Load data to Application, make network request to NASA images/videos API
   - [] Build request with Axios (axios is responsible for making requests and fetching data from network)
+  - first use API with only search q= and then try to customize to request only images
+  - View request result from NASA API
