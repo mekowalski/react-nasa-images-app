@@ -24,3 +24,8 @@
 - Code to detect anytime a user enters text in searchbar
 - [x] Define event handler for input
   - called anytime the text is changed in the input
+
+## NASA Image and Video Library
+- Root URL: `https://images-api.nasa.gov`
+- Endpoint I will use: `GET /search?q={q}` to perform a search
+- eg: `https://images-api.nasa.gov/search?q=saturn&media_type=image` will display images related to saturn
