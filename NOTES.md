@@ -55,7 +55,7 @@
   - (Communicate from Child to Parent, from SearchBar to App)
   - [x] Refactor App to class-based component
   - [x] Define callback function on App (onSearchSubmit)
-  - [] Update App to have State prop and set list of images on that State
+  - [x] Update App to have State prop and set list of images on that State
 
 - Fetching Data!!!
   - Load data to Application, make network request to NASA images/videos API
@@ -69,7 +69,7 @@
 
   - [x] Actually get data from the request that was made
     - handle with async await
-    - [] print out number of images resulted from request(temp)
+    - [x] print out number of images resulted from request(temp)
     - console error: `Unhandled Rejection (TypeError): this.setState is not a function`
     - to fix, either set up construtor() to bind `onSearchSubmit()` OR use arrow function
 
@@ -80,5 +80,8 @@
     - Second method: Async Await
     - able to assign variable to await axios request
     - console.log(response.data.collection.items) still provides list of images
+
+  - [] Refeactor App comp to not have Axios configuration
+    - Axios config separate then reference within App component
 
   - [] Also eventually render a list/display of images on the screen
