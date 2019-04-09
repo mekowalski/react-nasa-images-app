@@ -4,7 +4,15 @@ import SearchBar from './SearchBar'
 
 class App extends React.Component{
   onSearchSubmit(term) {
-    
+    axios.get('https://images-api.nasa.gov/search', {
+      params: {
+        q: term,
+        media_type: 'image'
+      },
+      headers: {
+        Authorization: 'API-key fLIfZZeWjAhPawnoL8lIyubp9JeOYPSdvJUU4jYk'
+      }
+    })
   }
 
 
