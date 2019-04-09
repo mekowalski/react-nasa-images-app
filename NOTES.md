@@ -7,11 +7,11 @@
 - [x] App Component, as always
   - Parent for and renders SearchBar and ImageList
 
-- [] Create SearchBar component
+- [x] Create SearchBar component
   - responsible of showing only text input at top of screen
   - handle typing event
   - need a text input for now
-  - [] Add styling from Semantic UI(maybe later include a NASA logo)
+  - [x] Add styling from Semantic UI(maybe later include a NASA logo)
 
 - [] ImageList Component
   - take list of images and render it on the screen
