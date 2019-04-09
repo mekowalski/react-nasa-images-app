@@ -1,12 +1,20 @@
 import React from 'react';
 
 const ImageList = props => {
-  console.log(props.images)
+  const images = props.images.map((image) => {
+    return <img src={image.items[i].links.href} />
+  })
+  //TypeError: Cannot read property 'links' of undefined
+
   return (
     <div>
-      This should be the list of images
+      {images}
     </div>
   )
 }
 
 export default ImageList
+
+//items.links.href
+//property path: collection.items[""0""].links[""0""].href
+//how do i get the index? create new index variable and call it?
