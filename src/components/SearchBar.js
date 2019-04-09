@@ -3,10 +3,10 @@ import React from 'react';
 class SearchBar extends React.Component {
   state = { term: '' }
 
-  onFormSubmit(event) {
+  onFormSubmit = event => {
     event.preventDefault()
 
-    console.log(this.state.term)
+    console.log(this.state.term) //this is always equal to SearchBar
   }
 
   render() {
