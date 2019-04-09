@@ -3,7 +3,8 @@ import axios from 'axios';
 import SearchBar from './SearchBar'
 
 class App extends React.Component{
-  //axios with async await syntax
+  state = { images: [] }
+
   async onSearchSubmit(term) {
     const response = await axios.get('https://images-api.nasa.gov/search', {
       params: {
@@ -14,15 +15,14 @@ class App extends React.Component{
         Authorization: 'API-key fLIfZZeWjAhPawnoL8lIyubp9JeOYPSdvJUU4jYk'
       }
     })
-    console.log(response.data.collection.items)
+    this.setState({ images: response.data.collection.items })
   }
 
   render() {
     return (
       <div className='ui container' style={{ marginTop: '15px' }}>
-      <SearchBar
-        onSubmit={this.onSearchSubmit}
-      />
+        <SearchBar onSubmit={this.onSearchSubmit} />
+        Found: {this.state.images.length} images
       </div>
     )
   }
