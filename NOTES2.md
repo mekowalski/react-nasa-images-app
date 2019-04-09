@@ -7,5 +7,5 @@
 
 - Grid CSS
   - [] get photos to somewhat 'scrunch' up next to one another to remove weird gaps
-  - [] create new React component to render 1 single image at a time
+  - [] create new React component(ImageCard) to render 1 single image at a time
     - component will figure out how large image is then adjust the grid size
