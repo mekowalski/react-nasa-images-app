@@ -1,7 +1,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-
+  state = { term: '' }
 
   render() {
     return (
@@ -11,7 +11,8 @@ class SearchBar extends React.Component {
             <label>Search NASA Images </label>
             <input
               type='text'
-              onChange={this.onInputChange}
+              value={this.state.term}
+              onChange={(e) => this.setState({ term: e.target.value })}
             />
           </div>
         </form>
@@ -21,3 +22,6 @@ class SearchBar extends React.Component {
 }
 
 export default SearchBar
+
+//onChange: everytime a user types inside the input, the state will update, the term property with the value
+//on input, new prop value set to this.state.term
