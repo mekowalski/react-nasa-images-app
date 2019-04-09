@@ -66,10 +66,14 @@
   - Request to get data order: collections -> items -> # -> data -> # -> links -> # -> href
   - ^this is the path to get a url/link/href for a photo that relates to the search. the `#`s are the index of the results. the href has a link with a trail of `~thumb.jpg` which shows a decent sized photo in a new tab.  there are collections of photos i can access for 1 entry of the result but i think that i want just select the initial default photo given in the JSON
 
-  - [] Actually get data from the request that was made
+  - [x] Actually get data from the request that was made
     - handle with async await
+
+    - First method: Promise `.then`
     - print out number of images resulted from request(temp)
     - response: `response.data.collection.items` contains the list of images that i care about
     - from there `.#.links.#.href` contains the 1 thumb image
+
+    - Second method: Async Await
 
   - [] Also eventually render a list/display of images on the screen
