@@ -37,3 +37,14 @@ Kowalski, are you there?
 - PhotoList: Render photos, a list of photos
   1. Map function, whenever rendering a list, probably will reach for Map function
   2. Any time a list is made, define a `key` on the root element of that list that is consistent and unchanging
+  - eg: key={image.href}, href used because `id` wasn't present and href was still very unique to each image
+
+- ImageCard: React Ref System
+  1. Reach into DOM to interact with an individual element
+  2. Ref is created in the constructor() and wired up to an element passed as a ref property
+  3. Ref can be accessed later and handle the actual DOM node
+
+- Grid CSS System
+  1. Not completely necessary
+  2. This is still fairly new and undergoing changes
+  3. Great reason to use for figuring out how the Ref system works
