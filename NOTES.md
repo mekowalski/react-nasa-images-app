@@ -68,5 +68,8 @@
 
   - [] Actually get data from the request that was made
     - handle with async await
+    - print out number of images resulted from request(temp)
+    - response: `response.data.collection.items` contains the list of images that i care about
+    - from there `.#.links.#.href` contains the 1 thumb image
 
   - [] Also eventually render a list/display of images on the screen

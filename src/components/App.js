@@ -13,6 +13,10 @@ class App extends React.Component{
         Authorization: 'API-key fLIfZZeWjAhPawnoL8lIyubp9JeOYPSdvJUU4jYk'
       }
     })
+    //callback invoked with whatever data from API
+    .then((response) => {
+      console.log(response)
+    })
   }
 
   render() {
