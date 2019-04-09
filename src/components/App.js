@@ -11,9 +11,7 @@ class App extends React.Component{
         q: term,
         media_type: 'image'
       },
-      headers: {
-        Authorization: 'API-key fLIfZZeWjAhPawnoL8lIyubp9JeOYPSdvJUU4jYk'
-      }
+
     })
     this.setState({ images: response.data.collection.items })
   }

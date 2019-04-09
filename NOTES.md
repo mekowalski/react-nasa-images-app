@@ -83,5 +83,6 @@
 
   - [] Refeactor App comp to not have Axios configuration
     - Axios config separate then reference within App component
+    - Config components: URL and API-key
 
   - [] Also eventually render a list/display of images on the screen
