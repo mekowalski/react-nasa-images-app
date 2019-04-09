@@ -10,7 +10,6 @@
           alt={this.props.image.title}
           src={this.props.image.links[0].href}
         />
-        //assume image object is passed to ImageCard aimage prop
        </div>
      )
    }
