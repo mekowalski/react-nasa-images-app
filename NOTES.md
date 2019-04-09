@@ -87,8 +87,11 @@
     - import api file in App component
 
   - ImageList Component
-  - [] Also eventually render a list/display of images on the screen
+  - YYYAAAYYY!!!
+  - [x] Also eventually render a list/display of images on the screen
     - turn it into actual JSX elements
     - loop(map) over images in array and return brand new component
   - communicate list of images, just fetched, down to ImageList (Parent to Child)
     - [x] define and pass prop
+
+  - [] Figure out Key purpose in Lists(from warning)
