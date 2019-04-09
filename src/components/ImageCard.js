@@ -7,8 +7,14 @@
      this.imageRef = React.createRef()
    }
 
+   //add basic, vanilla js html event listener
+   //once load event is emitted, then have successfully loaded the image, now can get height
    componentDidMount() {
-     console.log(this.imageRef)
+     this.imageRef.current.addEventListener('load', this.setSpans)
+   }
+
+   //grid-row property takes units of spans
+   setSpans = () => {
      console.log(this.imageRef.current.clientHeight)
    }
 
