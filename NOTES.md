@@ -19,3 +19,8 @@
 - I'll probably have a few different components in this app
 - These components will also have respective CSS files for styling, at some point
 - Create structure for `components`, `apis` and maybe `css` folders
+
+## Functionality: Creating Event Handlers
+- Code to detect anytime a user enters text in searchbar
+- [] Define event handler for input
+  - called anytime the text is changed in the input
