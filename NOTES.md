@@ -27,7 +27,10 @@
 
 - [x] Refactor SearchBar from uncontrolled to controlled element
   - initialize with state object
-  - 
+
+- [] Handle Form Submission
+  - when user presses enter key, trigger search for images
+  - eg: `orion` => displays list of images to orion
 
 ## NASA Image and Video Library
 - Root URL: `https://images-api.nasa.gov`
