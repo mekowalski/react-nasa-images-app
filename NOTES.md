@@ -53,3 +53,4 @@
 - App should be responsible for fetching images from external API request
   - (Communicate from Child to Parent, from SearchBar to App)
   - [] Refactor App to class-based component
+  - [] Define callback function on App (onSearchSubmit)
