@@ -4,7 +4,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className='ui segment'>
-        <form className='ui from'>
+        <form className='ui form'>
           <div className='field'>
             <label>Search NASA Images </label>
             <input type='text' />
