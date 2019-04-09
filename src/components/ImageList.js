@@ -1,8 +1,9 @@
 import React from 'react';
 
 const ImageList = props => {
+  // debugger
   const images = props.images.map((image) => {
-    return <img src={image.items[i].links.href} />
+    return <img src={image.links[0].href} />
   })
   //TypeError: Cannot read property 'links' of undefined
 
