@@ -7,6 +7,11 @@
      this.imageRef = React.createRef()
    }
 
+   componentDidMount() {
+     console.log(this.imageRef.current.clientHeight)
+   }
+   //returns 0 for clientHeight
+
    render() {
      const { title, links } = this.props.image
 
