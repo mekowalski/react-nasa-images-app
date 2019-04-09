@@ -15,7 +15,7 @@
    setSpans = () => {
      const height = this.imageRef.current.clientHeight
 
-     const spans = Math.ceil(height / 150)
+     const spans = Math.ceil(height / 15)
 
      this.setState ({ spans })
    }
@@ -24,7 +24,7 @@
      const { title, links } = this.props.image
 
      return (
-       <div>
+       <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
         <img
           ref={this.imageRef}
           alt={title}

@@ -23,4 +23,6 @@
 
   - [x] figure out the image height
   - [x] take height and set it on State on each re-rendered component
-  - [] when re-rendering, use image height to generate appropriate `grid-row` property
+  - [x] when re-rendering, use image height to generate appropriate `grid-row` property
+    - working a little better but there are still some spaces that are just too big
+    - make rows much smaller to get fine-grain details, won't over-allocate too many rows to an image
