@@ -5,7 +5,7 @@ import SearchBar from './SearchBar'
 class App extends React.Component{
   state = { images: [] }
 
-  async onSearchSubmit(term) {
+  async onSearchSubmit(term) { //this is a callback()
     const response = await axios.get('https://images-api.nasa.gov/search', {
       params: {
         q: term,
@@ -16,6 +16,7 @@ class App extends React.Component{
       }
     })
     this.setState({ images: response.data.collection.items })
+    //error: Unhandled Rejection (TypeError): this.setState is not a function
   }
 
   render() {

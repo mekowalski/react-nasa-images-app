@@ -70,6 +70,8 @@
   - [x] Actually get data from the request that was made
     - handle with async await
     - [] print out number of images resulted from request(temp)
+    - console error: `Unhandled Rejection (TypeError): this.setState is not a function`
+    - to fix, either set up construtor() to bind `onSearchSubmit()` OR use arrow function
 
     - First method: Promise `.then`
     - response: `response.data.collection.items` contains the list of images that i care about
