@@ -3,8 +3,9 @@ import axios from 'axios';
 import SearchBar from './SearchBar'
 
 class App extends React.Component{
-  onSearchSubmit(term) {
-    axios.get('https://images-api.nasa.gov/search', {
+  //axios with async await syntax
+  async onSearchSubmit(term) {
+    const response = await axios.get('https://images-api.nasa.gov/search', {
       params: {
         q: term,
         media_type: 'image'
@@ -13,12 +14,7 @@ class App extends React.Component{
         Authorization: 'API-key fLIfZZeWjAhPawnoL8lIyubp9JeOYPSdvJUU4jYk'
       }
     })
-    //First method to use if i want to access list of images
-    //a little harder to use
-    //callback invoked with whatever data from API
-    .then((response) => {
-      console.log(response.data.collection.items) //SWEET! an array of objects! woot woot
-    })
+    console.log(response.data.collection.items)
   }
 
   render() {
