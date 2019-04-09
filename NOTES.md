@@ -29,7 +29,7 @@
 - [x] Refactor SearchBar from uncontrolled to controlled element
   - initialize with state object
 
-- [] Handle Form Submission
+- [x] Handle Form Submission
   - when user presses enter key, trigger search for images
   - eg: `orion` => displays list of images to orion
 
@@ -58,10 +58,15 @@
 
 - Fetching Data!!!
   - Load data to Application, make network request to NASA images/videos API
-  - [] Build request with Axios (axios is responsible for making requests and fetching data from network)
+  - [x] Build request with Axios (axios is responsible for making requests and fetching data from network)
   - first use API with only search q= and then try to customize to request only images
   - add header for authorization
   - View request result from NASA API
   - So far, in Console Network, there are 2 requests made for the search term, only care about the request made with method: GET
   - Request to get data order: collections -> items -> # -> data -> # -> links -> # -> href
   - ^this is the path to get a url/link/href for a photo that relates to the search. the `#`s are the index of the results. the href has a link with a trail of `~thumb.jpg` which shows a decent sized photo in a new tab.  there are collections of photos i can access for 1 entry of the result but i think that i want just select the initial default photo given in the JSON
+
+  - [] Actually get data from the request that was made
+    - handle with async await
+
+  - [] Also eventually render a list/display of images on the screen
