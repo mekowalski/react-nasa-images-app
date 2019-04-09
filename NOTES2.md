@@ -13,6 +13,10 @@
   - [x] use ImageCard inside ImageList instead of img tag
 
 - Access DOM with refs
+  - To access DOM elements directly using React, vanilla JS won't work,
+  - Use React Ref system: gives access to single DOM element
+  - [] Create refs in constructor(), assign to instance variable then pass to particular JSX as props
+  
   - [] figure out the image height
   - [] take height and set it on State on each re-rendered component
-  - [] when re-rendering, use image height to generate appropriate `grid-row` property 
+  - [] when re-rendering, use image height to generate appropriate `grid-row` property
