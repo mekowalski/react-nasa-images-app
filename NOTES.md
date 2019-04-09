@@ -86,4 +86,8 @@
     - Config components: URL and API-key
     - import api file in App component
 
+  - ImageList Component
   - [] Also eventually render a list/display of images on the screen
+    - turn it into actual JSX elements
+  - communicate list of images, just fetched, down to ImageList (Parent to Child)
+    - [x] define and pass prop
