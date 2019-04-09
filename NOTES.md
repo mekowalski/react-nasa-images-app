@@ -31,11 +31,15 @@
 - [] Handle Form Submission
   - when user presses enter key, trigger search for images
   - eg: `orion` => displays list of images to orion
+
   - [x] Disable default from action
   - console error: `TypeError: Cannot read property 'state' of undefined`, most common error message
   - `this` in JS: JS thinks that `this` is equal to value `undefined`
-  - Rule: anytime you want to figure out the value of `this` is, look at WHERE the function is called
+  - Rule: anytime you want to figure out the value of `this` is, look at WHERE the function is called AND look at the variable to the left of the dot. eg: variable.method()
 
+  - [] fix `TypeError`
+    - either define constructor() with a binding to overwrite existing function OR
+    - turn the event handler function to an Arrow function instead =>, which automatically binds `this`
 
 ## NASA Image and Video Library
 - Root URL: `https://images-api.nasa.gov`
