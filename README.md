@@ -1,4 +1,4 @@
-# React Nasa Images App
+# React NASA Images App
 
 This is for diving deeper into React, including topics of: User Input with Forms and Events
 
@@ -28,20 +28,20 @@ Kowalski, are you there?
 ### App Review
 - SearchBar: Event Handlers
   1. With an event handler, take an input/form tag
-  2. Pass a callback() to a specifically named props(<form onSubmit={this.onFormSubmit}, etc)
+  2. Pass a callback() to a specifically named props(`<form onSubmit={this.onFormSubmit}`, etc)
   3. When that tag/element emits event, that callback() will be called
-  - Rule to keep in mind: anytime there is a cb(), be safe to use ES6 =>() syntax, which will bind the function and have the appropriate value of `this`
+  - Rule to keep in mind: anytime there is a cb(), be safe to use ES6 `=>()` syntax, which will bind the function and have the appropriate value of `this`
   - With Props system, only communicate from Parent down to Child(later an issue)
   - To communicate from Child to Parent, pass a cb() from Parent to Child, then Child will call the cb()
 
 - PhotoList: Render photos, a list of photos
   1. Map function, whenever rendering a list, probably will reach for Map function
   2. Any time a list is made, define a `key` on the root element of that list that is consistent and unchanging
-  - eg: key={image.href}, href used because `id` wasn't present and href was still very unique to each image
+  - eg: `key={image.href}`, `href` used because `id` wasn't present and href was still very unique to each image
 
 - ImageCard: React Ref System
   1. Reach into DOM to interact with an individual element
-  2. Ref is created in the constructor() and wired up to an element passed as a ref property
+  2. Ref is created in the `constructor()` and wired up to an element passed as a ref property
   3. Ref can be accessed later and handle the actual DOM node
 
 - Grid CSS System
